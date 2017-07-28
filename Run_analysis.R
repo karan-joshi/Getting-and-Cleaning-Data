@@ -74,8 +74,8 @@ extracted_set$activity <- factor(extracted_set$activity, levels = activity_label
 melt_set <- melt(extracted_set, id= c("subject","activity"), measure.vars= setdiff(names(extracted_set),c("subject","activity")))
 tidy_set <- dcast(melt_set, subject + activity ~ variable, mean)
 
-#Write the resulting dataset to a csv file
-write.csv(tidy_set, "tidy_set.csv", row.names=FALSE)
+#Write the resulting dataset to a txt file
+write.table(tidy_set, "tidy_set.txt", row.names=FALSE)
 
 
 
