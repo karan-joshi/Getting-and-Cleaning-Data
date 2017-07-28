@@ -23,4 +23,4 @@ The script Run_analysis.R applies all the transformations.
 2. Adjust the directory paths in the R script file according to where you save the data files.
 3. Run the R script Run_analysis.R
 
-This script creates a new csv file for the tidy dataset in the same directory you are working in.
+This script creates a new text file for the tidy dataset in the same directory you are working in.
